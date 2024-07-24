@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1a1a2e;
+  border: 2px solid #0f3460;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0f3460;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.div1 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #e1eec3, #f05053);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a2e;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.div1:hover {
+  transform: scale(1.1);
+}
+
+.clicked {
+  background: linear-gradient(145deg, #22c1c3, #fdbb2d);
+  color: #fff;
+}
+
+.matched {
+  background: linear-gradient(145deg, #7b4397, #dc2430);
+  color: #fff;
+  box-shadow: 0 0 10px #dc2430;
+}
+
+body {
+  background: linear-gradient(45deg, #141e30, #243b55);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.resetButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #0f3460;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.resetButton:hover {
+  background-color: #1a1a2e;
+}
